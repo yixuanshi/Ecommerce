@@ -36,7 +36,7 @@ import org.junit.jupiter.api.*;
 @Slf4j
 @SpringBootTest
 @AutoConfigureMockMvc
-@ActiveProfiles("test")
+@ActiveProfiles("test_no_db")
 public class UserControllerTest {
 
     @Resource

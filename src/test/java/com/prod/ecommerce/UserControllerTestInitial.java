@@ -1,6 +1,7 @@
 package com.prod.ecommerce;
 
 import org.springframework.http.HttpMethod;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MockMvcBuilder;
 import org.springframework.test.web.servlet.MvcResult;
@@ -19,6 +20,7 @@ import org.junit.jupiter.api.*;
 
 
 @Slf4j
+@ActiveProfiles("test_no_db")
 public class UserControllerTestInitial {
 
     private static MockMvc mockMvc;
